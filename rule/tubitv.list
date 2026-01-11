@@ -22,10 +22,9 @@ DOMAIN-SUFFIX,plutotv.com
 DOMAIN-SUFFIX,plutotv.net
 DOMAIN-SUFFIX,plutopreprod.tv
 
-# --- 关键：播放必须域名 (即便它们看起来像追踪器) ---
-# tags.tiqcdn.com 必须走代理以加载播放器配置
+
 DOMAIN,tags.tiqcdn.com
-# youborafds01.com 负责心跳监测，屏蔽会导致播放 30 秒后中断
+
 DOMAIN-SUFFIX,youborafds01.com
 
 # --- 派拉蒙/维亚康姆基础架构 ---
