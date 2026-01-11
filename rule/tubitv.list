@@ -5,11 +5,13 @@ DOMAIN-SUFFIX,tubi.tv
 DOMAIN-SUFFIX,tubi.video
 
 # --- Tubi 內容與廣告 (補上 adrise 以免黑屏) ---
+
 DOMAIN-SUFFIX,adrise.tv
 DOMAIN-KEYWORD,production-public.tubi.io
 DOMAIN,manifest.production-public.tubi.io
 
 # --- 如果你使用的是海外版（如澳洲、加拿大），建議補上對應的 CDN ---
+
 DOMAIN-SUFFIX,tensor-cdn.production-public.tubi.io
 DOMAIN-SUFFIX,production-public.tubi.io
 DOMAIN,manifest.production-public.tubi.io
