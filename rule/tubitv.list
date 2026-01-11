@@ -11,7 +11,31 @@ DOMAIN,manifest.production-public.tubi.io
 
 # --- 如果你使用的是海外版（如澳洲、加拿大），建議補上對應的 CDN ---
 DOMAIN-SUFFIX,tensor-cdn.production-public.tubi.io
+DOMAIN-SUFFIX,production-public.tubi.io
+DOMAIN,manifest.production-public.tubi.io
+DOMAIN,canvas.tubitv.com
+DOMAIN,ott-ps4.tubitv.com
 
-# --- 特定 AWS IP (作補償用，通常域名規則已足夠) ---
-IP-CIDR,44.232.47.182/32,no-resolve
-IP-CIDR,35.162.94.92/32,no-resolve
+# --- Pluto TV 核心域名 ---
+DOMAIN-SUFFIX,pluto.tv
+DOMAIN-SUFFIX,plutotv.com
+DOMAIN-SUFFIX,plutotv.net
+DOMAIN-SUFFIX,plutopreprod.tv
+
+# --- 关键：播放必须域名 (即便它们看起来像追踪器) ---
+# tags.tiqcdn.com 必须走代理以加载播放器配置
+DOMAIN,tags.tiqcdn.com
+# youborafds01.com 负责心跳监测，屏蔽会导致播放 30 秒后中断
+DOMAIN-SUFFIX,youborafds01.com
+
+# --- 派拉蒙/维亚康姆基础架构 ---
+DOMAIN-SUFFIX,viacom.com
+DOMAIN-SUFFIX,cc-dtc.com
+
+# --- 视频分发 (Akamai/AWS) ---
+DOMAIN-KEYWORD,pluto-live
+DOMAIN-KEYWORD,plutotv-live
+
+DOMAIN-SUFFIX,livetv-fa.tubi.video
+DOMAIN-SUFFIX,tensor-cdn.production-public.tubi.io
+DOMAIN-SUFFIX,video-previews-cdn.production-public.tubi.io
